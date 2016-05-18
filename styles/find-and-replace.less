@@ -45,6 +45,7 @@ atom-workspace.find-visible {
   overflow-x: auto;
 
   .header {
+    display: flex;
     padding: @component-padding/4 @component-padding/2;
     min-width: @min-width;
   }
@@ -53,8 +54,8 @@ atom-workspace.find-visible {
     margin-bottom: @component-padding/4;
   }
 
-  .icon-x.pull-right::before{
-    margin: 0;
+  .close-button::before {
+    margin: 0 0 0 @component-padding;
   }
 
   .input-block {
@@ -107,8 +108,10 @@ atom-workspace.find-visible {
   }
 
   .options-label {
-    color: @text-color-subtle;
     position: relative;
+    flex: 1;
+    text-align: right;
+    color: @text-color-subtle;
     .options {
       color: @text-color;
     }

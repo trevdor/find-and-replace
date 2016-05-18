@@ -43,7 +43,7 @@ class ProjectFindView extends View
         @span class: 'header-item options-label', =>
           @span 'With Options: '
           @span outlet: 'optionsLabel', class: 'options'
-        @a outlet: 'closeButton', class: 'icon icon-x pull-right octicons'
+        @a outlet: 'closeButton', class: 'close-button icon icon-x octicons'
 
       @section outlet: 'replacmentInfoBlock', class: 'input-block', =>
         @progress outlet: 'replacementProgress', class: 'inline-block'

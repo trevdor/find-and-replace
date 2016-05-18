@@ -29,7 +29,7 @@ class FindView extends View
         @span class: 'header-item options-label', =>
           @span 'With Options: '
           @span outlet: 'optionsLabel', class: 'options'
-        @a outlet: 'closeButton', class: 'icon icon-x pull-right octicons'
+        @a outlet: 'closeButton', class: 'close-button icon icon-x octicons'
 
       @section class: 'input-block find-container', =>
         @div class: 'input-block-item input-block-item--flex editor-container', =>
