@@ -1,10 +1,12 @@
 '.platform-darwin':
   'cmd-F': 'project-find:show'
+  'cmd-ctrl-f': 'open-files-find:show'
   'cmd-f': 'find-and-replace:show'
   'cmd-alt-f': 'find-and-replace:show-replace'
 
 '.platform-win32, .platform-linux':
   'ctrl-F': 'project-find:show'
+  'ctrl-alt-f': 'open-files-find:show'
   'ctrl-f': 'find-and-replace:show'
 
 '.platform-darwin atom-text-editor':
@@ -52,26 +54,47 @@
   'cmd-alt-c': 'project-find:toggle-case-option'
   'cmd-alt-w': 'project-find:toggle-whole-word-option'
 
+'.platform-darwin .open-files-find':
+  'cmd-enter': 'open-files-find:confirm'
+  'cmd-alt-/': 'open-files-find:toggle-regex-option'
+  'cmd-alt-c': 'open-files-find:toggle-case-option'
+  'cmd-alt-w': 'open-files-find:toggle-whole-word-option'
+
+'.platform-win32 .open-files-find, .platform-linux .open-files-find':
+  'ctrl-enter': 'open-files-find:confirm'
+  'ctrl-alt-/': 'open-files-find:toggle-regex-option'
+  'ctrl-shift-c': 'find-and-replace:toggle-case-option'
+
 '.platform-win32 .project-find, .platform-linux .project-find':
   'ctrl-enter': 'project-find:confirm'
   'ctrl-alt-/': 'project-find:toggle-regex-option'
-  'ctrl-shift-c': 'project-find:toggle-case-option'
+  'ctrl-shift-c': 'find-and-replace:toggle-case-option'
 
 '.find-and-replace, .project-find, .project-find .results-view':
   'tab': 'find-and-replace:focus-next'
   'shift-tab': 'find-and-replace:focus-previous'
 
+'.find-and-replace, .open-files-find, .open-files-find .results-view':
+  'tab': 'find-and-replace:focus-next'
+  'shift-tab': 'find-and-replace:focus-previous'
+
 '.platform-darwin .find-and-replace .replace-container atom-text-editor':
   'cmd-enter': 'find-and-replace:replace-all'
+'.platform-darwin .open-files-find .replace-container atom-text-editor':
+  'cmd-enter': 'open-files-find:replace-all'
 '.platform-darwin .project-find .replace-container atom-text-editor':
   'cmd-enter': 'project-find:replace-all'
 
 '.platform-win32 .find-and-replace .replace-container atom-text-editor':
   'ctrl-enter': 'find-and-replace:replace-all'
+'.platform-win32 .open-files-find .replace-container atom-text-editor':
+  'ctrl-enter': 'open-files-find:replace-all'
 '.platform-win32 .project-find .replace-container atom-text-editor':
   'ctrl-enter': 'project-find:replace-all'
 
 '.platform-linux .find-and-replace .replace-container atom-text-editor':
   'ctrl-enter': 'find-and-replace:replace-all'
+'.platform-linux .open-files-find .replace-container atom-text-editor':
+  'ctrl-enter': 'open-files-find:replace-all'
 '.platform-linux .project-find .replace-container atom-text-editor':
   'ctrl-enter': 'project-find:replace-all'

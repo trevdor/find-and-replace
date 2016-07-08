@@ -6,6 +6,8 @@
   "license": "MIT",
   "activationCommands": {
     "atom-workspace": [
+      "open-files-find:show",
+      "open-files-find:toggle",
       "project-find:show",
       "project-find:toggle",
       "project-find:show-in-current-directory",
