@@ -104,7 +104,7 @@ module.exports =
       selectNext
 
     showPanel = (panelToShow, postShowAction) =>
-      [@findPanel, @openFilesFindPanel, @projectFindPanel].map (p) => p.hide() unless p == panelToShow
+      [@findPanel, @openFilesFindPanel, @projectFindPanel].map (p) => p.hide() unless p is panelToShow
       panelToShow.show()
       postShowAction?()
 
