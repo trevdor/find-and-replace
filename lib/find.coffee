@@ -172,7 +172,7 @@ module.exports =
 
     @openFilesFindView = new OpenFilesFindView(@resultsModel, options)
     @projectFindView = new ProjectFindView(@resultsModel, options)
-
+    
     @findPanel = atom.workspace.addBottomPanel(item: @findView, visible: false, className: 'tool-panel panel-bottom')
     @openFilesFindPanel = atom.workspace.addBottomPanel(item: @openFilesFindView, visible: false, className: 'tool-panel panel-bottom')
     @projectFindPanel = atom.workspace.addBottomPanel(item: @projectFindView, visible: false, className: 'tool-panel panel-bottom')

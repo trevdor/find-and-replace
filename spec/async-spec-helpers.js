@@ -19,7 +19,6 @@ export function afterEach (fn) {
 }
 
 ['it', 'fit', 'ffit', 'fffit'].forEach(function (name) {
-  // xkcd
   module.exports[name] = function (description, fn) {
     global[name](description, function () {
       const result = fn()
